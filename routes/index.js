@@ -7,8 +7,8 @@ var passport = require('passport');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Lesson 7',
-  message: 'CRUD with MongoDB - authentication',
+  res.render('index', { title: 'Lab 5 - Passport Authentication',
+  message: 'In this lab I added a new data-driven page to my in-class MEAN application and control access to my new page',
   user: req.user});
 });
 

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="/stylesheets/bootstrap-theme.min.css" />
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <% if(user) { %>
+            <li><a href="/games">Games</a></li>
+            <li><a href="/logout">Logout</a></li>
+            <li><a href="/users">Users</a></li>
+            <span class="navbar-right navbar-text"><%=user.username %></span>
+            <% }
+            else
+            {%>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/login">Login</a></li>
+            <% } %>
+        </ul>
+    </nav>
